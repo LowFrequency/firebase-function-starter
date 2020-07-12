@@ -145,4 +145,4 @@ app.delete('/:model/:id', async (req, res) => {
   }
 })
 
-module.exports.api = app;
+module.exports.v1 = app;
