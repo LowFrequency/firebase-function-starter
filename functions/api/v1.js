@@ -8,7 +8,7 @@ const {
   getDocs,
   getDocsWhere,
   deleteDoc,
-} = require('../helpers/firebaseDb');
+} = require('../helpers/firebase');
 
 //Express
 const express = require('express');
