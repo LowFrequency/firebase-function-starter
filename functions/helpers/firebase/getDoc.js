@@ -10,7 +10,7 @@ const db = admin.firestore();
 const getDoc = async (collection, id) => {
   try {
     const doc = await db.collection(collection).doc(`/${id}/`).get();
-    return doc.data();
+    return { ...doc.data(), id: doc.id }
   } catch (error) {
     return new Error("Error: " + error);
   }
